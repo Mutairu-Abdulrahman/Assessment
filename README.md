@@ -1,4 +1,6 @@
 **# SauceDemo Cypress E2E Tests**
+
+
 This project contains end-to-end (E2E) tests for the SauceDemo application using:
 1. Cypress
 2. Cucumber BDD
@@ -6,6 +8,7 @@ This project contains end-to-end (E2E) tests for the SauceDemo application using
 4. GitHub Actions CI integration
 
 **Why These Tools?**
+
 | Tool                        | Reason for Use                                                        |
 | --------------------------- | --------------------------------------------------------------------- |
 | **Cypress**                 | Fast, reliable E2E test runner with great developer experience        |
@@ -15,26 +18,40 @@ This project contains end-to-end (E2E) tests for the SauceDemo application using
 
 
 **# Folder Structure**
+
 cypress/
+
 ├── e2e/
+
 │   ├── tests/
+
 |       └── steps.js            # Step definitions
+
 │   ├── test.feature            # All BDD scenarios
+
 ├── Pages/
+
 │   └── saucedemoPOM.js
 
+
 **How to Run the Tests**
+
+
 **Install Dependencies**
+
 npm install cye2e
 npx cye2e
 
 **Run Tests in Cypress UI (Interactive)**
+
 npx cypress open
+
 
 
 **#Automation Assessment**
 
  **Test Scenarios Covered**
+ 
 1. Login with valid & invalid credentials
 2. Product listing and sorting (e.g., price low to high)
 3. Adding/removing items to/from the cart And verifying cart content
@@ -42,6 +59,7 @@ npx cypress open
 6. Logout functionality
 
 **Tech Stack**
+
 1. JavaScript
 2. Cypress
 3. Cucumber BDD
@@ -50,6 +68,7 @@ npx cypress open
 
 
 **Test Plan**
+
 | Section             | Details                                                                 |
 | ------------------- | ----------------------------------------------------------------------- |
 | **Test Objective**  | To validate the core functionality of the SauceDemo e-commerce website. |
@@ -63,6 +82,7 @@ npx cypress open
 
 
 **Test Scenarios & Cases**
+
 | ID     | Scenario                                 | Description                                             |
 | ------ | ---------------------------------------- | ------------------------------------------------------- |
 | TC\_01 | Login with valid credentials             | User logs in successfully with standard\_user           |
@@ -78,6 +98,7 @@ npx cypress open
 
 
 **How Tests Are Organized**
+
 - All test cases are written in Gherkin format under *.feature file
 - Steps are implemented in JS inside step_definitions/
 - All element selectors and logic are abstracted in Page Object files
@@ -85,5 +106,6 @@ npx cypress open
 
 
 **Author**
+
 Mutairu Abdulrahman
 💼 QA Engineer
